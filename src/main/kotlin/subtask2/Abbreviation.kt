@@ -2,8 +2,14 @@ package subtask2
 
 class Abbreviation {
 
-    // TODO: Complete the following function
+
     fun abbreviationFromA(a: String, b: String): String {
-        throw NotImplementedError("Not implemented")
+
+
+        val tempA = a.toUpperCase()
+
+        val matchResult = Regex(tempA).find(b) ?: return "NO"
+        return matchResult.toString()
+
     }
 }
