@@ -6,7 +6,6 @@ class Blocks {
 
 
     fun getData(blockA: Array<*>, blockB: KClass<*>): Any {
-  //TODO
-        return //TODO
+        throw NotImplementedError("Not implemented")
     }
 }
